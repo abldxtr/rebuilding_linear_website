@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navigation-height: 4.8rem;
+  }
+
+  html {
+    @apply bg-background font-sans text-off-white;
+    font-size: 62.5%;
+  }
+}
+
+@layer components {
+  .lii {
+    @apply cursor-pointer text-[14px] font-medium transition-[color,opacity] duration-300 hover:text-grey;
+  }
+  .button-login {
+    @apply h-8 px-4 text-[14px] font-medium;
+  }
+  .button-signup {
+    @apply hover:text-shadow px-[12px] h-[32px] font-semibold rounded-full bg-primary-gradient px-4 text-[14px] transition-all hover:shadow-primary duration-1000;
+  }
+  .ull {
+    @apply mt-10 flex min-w-[50%] w-1/2 flex-col lg:mt-0 lg:min-w-[12rem] [&_ul]:first:text-background;
+  }
+  .ulheader {
+    @apply mb-3 bg-white font-medium;
+  }
+  .ullast {
+    @apply bg-white;
+  }
+  .lilink {
+    @apply mb-3 block cursor-pointer text-grey transition-all hover:text-off-white;
+  }
+  .alink {
+    @apply mb-3 block text-grey transition-colors hover:text-off-white;
+  }
+  .svgdiv {
+    @apply flex items-center w-full justify-center;
+  }
+  .bdclass {
+    @apply h-full w-full bg-[#000212] text-[#f7f8f8];
+  }
+  .gridbg {
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    );
+  }
+  .gridbefore {
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.07)
+    );
+  }
+  .gridbeforemask {
+    @apply [mask-image:linear-gradient(black,_black)_content-box_content-box,linear-gradient(black,_black)];
+  }
+  .gridbeforemaskcom {
+    @apply [mask-composite:xor];
+  }
+  .gridcols {
+    @apply relative flex min-h-[480px] flex-col items-center justify-end overflow-hidden rounded-[48px] p-[56px];
+  }
+  .gridcol1 {
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    );
+  }
+  .gridcol1before {
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.07)
+    );
+  }
+  .gridcol1beforemask {
+    @apply [mask-image:linear-gradient(black,_black)_content-box_content-box,linear-gradient(black,_black)];
+  }
+  .gridcol1beforemaskcom {
+    @apply [mask-composite:xor];
+  }
+  .keybg {
+    @apply [mask-image:linear-gradient(transparent_0%,rgba(0,_0,_0,_0.57)_33.98%,black_100%)];
+  }
+  .keyboardmask {
+    @apply [mask-image:linear-gradient(to_right,transparent,black_40%,black_calc(60%),transparent_100%)];
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: rgb(0 0 0 / 56%) 0px 3px 12px;
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      to right bottom,
+      rgb(255, 255, 255) 30%,
+      rgba(255, 255, 255, 0.38)
+    );
+    background-clip: text;
+    color: transparent;
+  }
+
+  .mask-radial-faded {
+    mask-image: radial-gradient(
+      circle at center center,
+      black,
+      transparent 80%
+    );
+  }
+
+  .mask-linear-faded {
+    mask-image: linear-gradient(black, transparent 70%);
+  }
+
+  .mask-keyboard {
+    mask-image: linear-gradient(
+      transparent 0%,
+      rgba(0, 0, 0, 0.57) 33.98%,
+      black 100%
+    );
+  }
+
+  .mask-shortcutkeys {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 40%,
+      black calc(60%),
+      transparent 100%
+    );
+  }
+}
