@@ -202,12 +202,12 @@ export default function Features() {
 
       {/* <!-- header line --> */}
       <div className="mx-auto mt-[220px] w-full max-w-[1200px] px-[32px]">
-        <h2 className="mb-[28px] text-center text-[56px] font-[450] leading-[1]">
+        <h2 className="mb-[28px] text-center text-[36px] md:text-[56px] font-[450] leading-[1]">
           Unlike any tool
           <br />
           {/* you’ve used before */}
         </h2>
-        <p className="mx-auto mb-[48px] max-w-[680px] text-center text-[22px] font-normal leading-[1.3] text-[#b4bcd0]">
+        <p className="mx-auto mb-[48px] max-w-[680px] text-center text-[18px] font-normal leading-[1.3] text-[#b4bcd0]">
           Designed to the last pixel and engineered with unforgiving precision,
           Linear combines UI elegance with world-className performance.
         </p>
