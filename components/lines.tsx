@@ -46,8 +46,8 @@ export default function Lines() {
 
   return (
     <div className="absolute inset-0 w-full h-full">
-      {lines.map((line) => (
-        <AnimatePresence>
+      {lines.map((line, index) => (
+        <AnimatePresence key={index}>
           <motion.div
             key={line.id}
             className="absolute w-[80px] rounded-full z-[1000] h-px animLine"
