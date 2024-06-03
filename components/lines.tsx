@@ -74,7 +74,7 @@ export default function Lines() {
         </AnimatePresence>
       ))}
       {lines.map((line) => (
-        <AnimatePresence>
+        <AnimatePresence key={line.id + line.y1 * 2}>
           <motion.div
             key={line.id + line.y1}
             className="absolute w-px right-0 rounded-full z-[1000] h-[80px] animLineY"
