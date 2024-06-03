@@ -15,7 +15,7 @@ export default function Hero() {
   return (
     <div className="bg-page-gradient pb-[16.4rem] px-[16px] sm:px-[32px] pt-[48px] md:pb-[25.6rem]">
       <div className="mx-auto max-w-[120rem] px-[2.4rem] pt-[64px] text-center">
-        <div className="flex items-center justify-center">
+        <div className="flex translate-y-[-10px] animate-fade-in opacity-0 items-center justify-center">
           <button className="backdrop:filter-[12px] flex items-center  h-[28px] rounded-full text-[13px] border border-transparent-white bg-white bg-opacity-10 px-[12px] text-off-white transition-colors ease-in hover:bg-opacity-20">
             Linear Mobile v0.1
             <svg
@@ -33,17 +33,17 @@ export default function Hero() {
           </button>
         </div>
 
-        <h1 className="text-gradient my-[24px] font-medium tracking-[-0.02em] text-6xl leading-[1.1] md:text-[80px]">
+        <h1 className="text-gradient translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms] my-[24px] font-medium tracking-[-0.02em] text-6xl leading-[1.1] md:text-[80px]">
           Linear is a better way <br className="hidden md:block" />
           to build products
         </h1>
 
-        <p className="mb-12 text-lg md:text-[22px] text-[rgb(180,188,208)] leading-[1.3] font-normal mt-[48px] ">
+        <p className="mb-12 text-lg md:text-[22px] text-[rgb(180,188,208)] translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms] leading-[1.3] font-normal mt-[48px] ">
           Meet the new standard for modern software development. <br />
           Streamline issues, sprints, and product roadmaps.
         </p>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:600ms]">
           <button className="hover:text-shadow flex items-center rounded-full bg-primary-gradient px-[16px] hover:brightness-115 text-[16px] h-[48px] transition-all hover:shadow-primary">
             Get started
             <svg

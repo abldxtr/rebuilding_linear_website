@@ -122,7 +122,7 @@ export default function Animate() {
   };
 
   return (
-    <div className="mt-20" ref={ref}>
+    <div className="" ref={ref}>
       {inView && (
         <motion.div className="flex items-center justify-center w-full space-x-8">
           {items.map((item, index) => {

@@ -5,7 +5,8 @@ export default function ImageHero({ inView }: { inView: boolean }) {
   return (
     <div
       className={classNames(
-        "relative overflow-hidden   mx-auto  max-w-[1024px] rounded-lg border border-transparent-white bg-white bg-opacity-[0.01] before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full  before:bg-hero-glow before:opacity-0 before:[filter:blur(120px)]",
+        "relative  mx-auto  max-w-[1024px] rounded-lg border",
+        " border-transparent-white bg-white bg-opacity-[0.01] before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full  before:bg-hero-glow before:opacity-0 before:[filter:blur(120px)]",
         inView && "before:animate-image-glow",
         inView ? "animate-image-rotate" : "[transform:rotateX(25deg)]",
       )}
